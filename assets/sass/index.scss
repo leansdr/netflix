@@ -7,12 +7,12 @@ body {
     height: 120px;
     width: 100%;
     position: absolute;
-    background: linear-gradient(#222 10%, transparent 90%);
+    background: linear-gradient(#111 10%, transparent 90%);
     #header-logo {
       margin: 5px 60px;
       #logo {
-        width: 130px;
-        height: 100px;
+        width: 180px;
+        height: 180px;
       }
     }
     #header-buttons {
@@ -49,13 +49,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 100vh;
+      width: 100vw;
+    }
     #banner-description {
-      width: 60%;
+      width: 50%;
       text-align: center;
       margin-top: 50px;
+      position: absolute;
       h1 {
         color: #fff;
-        font-size: 50px;
+        font-size: 60px;
         margin-bottom: 20px;
       }
       h2 {
@@ -65,10 +71,12 @@ body {
       h3 {
         color: #fff;
         margin-bottom: 20px;
+        font-size: 16px;
       }
       section {
-          display: flex;
-          align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         #email {
           outline: none;
           padding: 20px 0;
@@ -77,12 +85,24 @@ body {
         #input-submit {
           background-color: #e50914;
           font-size: 20px;
-          height: 100%;
+          font-weight: bold;
           color: #fff;
           border: none;
           padding: 20px 30px;
           cursor: pointer;
+          &:hover {
+            background-color: #d61822;
+          }
         }
+        .error-border {
+          border: 2px solid #ffa00a;
+        }
+      }
+      #warning {
+        color: #ffa00a;
+        text-align: left;
+        margin-left: 40px;
+        display: none;
       }
     }
   }

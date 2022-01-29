@@ -15,14 +15,14 @@ body header {
   height: 120px;
   width: 100%;
   position: absolute;
-  background: linear-gradient(#222 10%, transparent 90%);
+  background: linear-gradient(#111 10%, transparent 90%);
 }
 body header #header-logo {
   margin: 5px 60px;
 }
 body header #header-logo #logo {
-  width: 130px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
 }
 body header #header-buttons {
   margin: 5px 60px;
@@ -58,14 +58,20 @@ body #banner {
   justify-content: center;
   align-items: center;
 }
+body #banner .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100vw;
+}
 body #banner #banner-description {
-  width: 60%;
+  width: 50%;
   text-align: center;
   margin-top: 50px;
+  position: absolute;
 }
 body #banner #banner-description h1 {
   color: #fff;
-  font-size: 50px;
+  font-size: 60px;
   margin-bottom: 20px;
 }
 body #banner #banner-description h2 {
@@ -75,10 +81,12 @@ body #banner #banner-description h2 {
 body #banner #banner-description h3 {
   color: #fff;
   margin-bottom: 20px;
+  font-size: 16px;
 }
 body #banner #banner-description section {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 body #banner #banner-description section #email {
   outline: none;
@@ -88,11 +96,23 @@ body #banner #banner-description section #email {
 body #banner #banner-description section #input-submit {
   background-color: #e50914;
   font-size: 20px;
-  height: 100%;
+  font-weight: bold;
   color: #fff;
   border: none;
   padding: 20px 30px;
   cursor: pointer;
+}
+body #banner #banner-description section #input-submit:hover {
+  background-color: #d61822;
+}
+body #banner #banner-description section .error-border {
+  border: 2px solid #ffa00a;
+}
+body #banner #banner-description #warning {
+  color: #ffa00a;
+  text-align: left;
+  margin-left: 40px;
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
